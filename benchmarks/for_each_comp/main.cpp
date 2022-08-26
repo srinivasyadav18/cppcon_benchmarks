@@ -16,6 +16,8 @@ std::size_t threads;
 #define SIMD_TEST_WITH_FLOAT
 // #define SIMD_TEST_WITH_DOUBLE
 
+#define TEST_WITH_VECTORIZATION
+
 struct test_t
 {   
     template <typename T>
@@ -24,7 +26,10 @@ struct test_t
         using namespace std;
         using namespace std::experimental;
 
-        x = 5.0f * sin(x) + 6.0f * cos(x);
+        for (int i = 0; i < 100; i++)
+        {
+            x = 5.0f * sin(x) + 6.0f * cos(x);
+        }
     }
 } test_{};
 
@@ -51,4 +56,4 @@ auto test(ExPolicy policy, std::size_t n, Gen gen)
 
 
 // INCLUDE MAIN FUNCTION
-#include "../main.hpp"
+#include "../../main.hpp"

@@ -10,6 +10,7 @@
 #include <cmath>
 #include <random>
 #include <filesystem>
+#include <limits>
 
 template <typename ExPolicy, typename T, typename Gen>
 auto test3(ExPolicy policy, std::size_t iterations, std::size_t n, Gen gen)
@@ -58,14 +59,23 @@ void test4(std::string type,
                     << test<decltype(seq_pol), T, Gen>(
                         seq_pol, chunk, gen) 
                     << ","
+                #if defined (TEST_WITH_VECTORIZATION)
                     << test<decltype(simd_pol), T, Gen>(
                         simd_pol, chunk, gen)
+                #else
+                    << std::numeric_limits<double>::max()
+                #endif
                     << ","
                     << test<decltype(par_pol), T, Gen>(
                         par_pol, chunk, gen) 
                     << ","
+                #if defined (TEST_WITH_VECTORIZATION)
                     << test<decltype(par_simd_pol), T, Gen>(
                         par_simd_pol, chunk, gen) 
+                #else
+                    << std::numeric_limits<double>::max()
+                #endif
+
                     << "\n";
                 fout.flush();
             }

@@ -12,7 +12,6 @@ function(add_simd_test target)
     )
 
     target_compile_options(${target} PUBLIC "-march=native" "-fno-tree-vectorize")
-    # target_link_libraries(${target} PUBLIC HPX::hpx)
 
     set(CORES)
     if(${SIMD_CORES})
@@ -27,12 +26,4 @@ function(add_simd_test target)
     add_test(NAME ${target}_test COMMAND ${target} ${CORES} ${END})
 endfunction()
 
-set(subdirs 
-    for_each_comp
-    for_each_mem
-)
-
-foreach(subdir ${subdirs})
-    message("Adding subdir ${subdir}")
-    add_subdirectory(${subdir})
-endforeach(subdir)
+add_subdirectory(benchmarks)
