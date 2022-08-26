@@ -28,7 +28,7 @@ cmake -GNinja -S hpx -B hpx_build \
 # Build HPX
 cd hpx_build && ninja && cd ..
 
-HPX_DIR=$(pwd)/hpx_build cmake -GNinja -S .. -B benchmarks -DCMAKE_BUILD_TYPE=Release -DSIMD_END=25
+HPX_DIR=$(pwd)/hpx_build cmake -GNinja -S .. -B benchmarks -DCMAKE_BUILD_TYPE=Release -DSIMD_END=21
 
 cd benchmarks
 ninja

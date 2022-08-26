@@ -1,0 +1,64 @@
+Start testing: Aug 26 17:14 CDT
+----------------------------------------------------------
+1/4 Testing: adj_diff_test
+1/4 Test: adj_diff_test
+Command: "/work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/adj_diff/adj_diff" "--end=21"
+Directory: /work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/adj_diff
+"adj_diff_test" start time: Aug 26 17:14 CDT
+Output:
+----------------------------------------------------------
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+<end of output>
+Test time =   3.57 sec
+----------------------------------------------------------
+Test Passed.
+"adj_diff_test" end time: Aug 26 17:14 CDT
+"adj_diff_test" time elapsed: 00:00:03
+----------------------------------------------------------
+
+2/4 Testing: for_each_comp_test
+2/4 Test: for_each_comp_test
+Command: "/work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/for_each_comp/for_each_comp" "--end=21"
+Directory: /work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/for_each_comp
+"for_each_comp_test" start time: Aug 26 17:14 CDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time = 363.30 sec
+----------------------------------------------------------
+Test Passed.
+"for_each_comp_test" end time: Aug 26 17:20 CDT
+"for_each_comp_test" time elapsed: 00:06:03
+----------------------------------------------------------
+
+3/4 Testing: for_each_mem_test
+3/4 Test: for_each_mem_test
+Command: "/work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/for_each_mem/for_each_mem" "--end=21"
+Directory: /work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/for_each_mem
+"for_each_mem_test" start time: Aug 26 17:20 CDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   2.87 sec
+----------------------------------------------------------
+Test Passed.
+"for_each_mem_test" end time: Aug 26 17:20 CDT
+"for_each_mem_test" time elapsed: 00:00:02
+----------------------------------------------------------
+
+4/4 Testing: reverse_test
+4/4 Test: reverse_test
+Command: "/work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/reverse/reverse" "--end=21"
+Directory: /work/srinivasyadav227/cppcon/cppcon_benchmarks/build/benchmarks/benchmarks/reverse
+"reverse_test" start time: Aug 26 17:20 CDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.59 sec
+----------------------------------------------------------
+Test Passed.
+"reverse_test" end time: Aug 26 17:20 CDT
+"reverse_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Aug 26 17:20 CDT

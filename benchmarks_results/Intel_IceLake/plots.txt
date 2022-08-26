@@ -1,0 +1,4 @@
+./benchmarks/adj_diff/plots
+./benchmarks/for_each_comp/plots
+./benchmarks/for_each_mem/plots
+./benchmarks/reverse/plots
