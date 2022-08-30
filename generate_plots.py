@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import sys
 
 def parse_cache(cache):
     ret = {}
@@ -121,10 +122,8 @@ types_sizes = {
               }
 
 cpu_familiy = ""
-try:
-    cpu_familiy = os.environ['CPU_FAMILIY']
-except:
-    pass
+if len(sys.argv) == 2:
+    cpu_familiy = sys.argv[1]
 
 util_dict = {}
 cpu_dict = cpuinfo.get_cpu_info()

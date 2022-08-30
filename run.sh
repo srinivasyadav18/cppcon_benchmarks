@@ -1,6 +1,6 @@
-echo $CPU_FAMILY
+CPU_FAMILY=`hostname -s`
 PROJECT_ROOT=$(pwd)
-BUILD_DIR=$PROJECT_ROOT/build
+BUILD_DIR=$PROJECT_ROOT/build_$CPU_FAMILY
 
 BENCHMARKS_RESULT_DIR=$PROJECT_ROOT/benchmarks_results/$CPU_FAMILY
 mkdir -p $BENCHMARKS_RESULT_DIR
@@ -28,7 +28,7 @@ cmake -GNinja -S hpx -B hpx_build \
 # Build HPX
 cd hpx_build && ninja && cd ..
 
-HPX_DIR=$(pwd)/hpx_build cmake -GNinja -S .. -B benchmarks -DCMAKE_BUILD_TYPE=Release -DSIMD_END=21
+HPX_DIR=$(pwd)/hpx_build cmake -GNinja -S .. -B benchmarks -DCMAKE_BUILD_TYPE=Release -DSIMD_END=30
 
 cd benchmarks
 ninja
