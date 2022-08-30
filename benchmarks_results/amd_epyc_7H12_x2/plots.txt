@@ -1,0 +1,4 @@
+./adj_diff/plots
+./for_each_comp/plots
+./for_each_mem/plots
+./reverse/plots

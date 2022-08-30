@@ -1,0 +1,11 @@
+./adj_diff/plots
+./for_each_comp/plots
+./for_each_mem/plots
+./for_each_mem/plots/16/plots
+./for_each_mem/plots/1/plots
+./for_each_mem/plots/2/plots
+./for_each_mem/plots/32/plots
+./for_each_mem/plots/40/plots
+./for_each_mem/plots/4/plots
+./for_each_mem/plots/8/plots
+./reverse/plots
