@@ -2,6 +2,7 @@ set(subdirs
     adj_diff
     for_each_comp
     for_each_mem
+    for_each_mem_sr
     reverse
 )
 
