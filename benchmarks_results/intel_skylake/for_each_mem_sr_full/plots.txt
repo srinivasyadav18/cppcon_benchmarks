@@ -1,0 +1,9 @@
+./16/plots
+./1/plots
+./20/plots
+./2/plots
+./32/plots
+./40/plots
+./4/plots
+./8/plots
+./plots
